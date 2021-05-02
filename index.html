@@ -1,11 +1,108 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+<script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+}
+
+
+/* Responsive latheyt - whenthe screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive latheyt - whenthe screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
-<header>Thomas</header>
-<p>HELLO</p>
 <body>
-</body>
+
+<div class="header">
+  <h1>the Gilman House </h1>
+  
+
+<div class="topnav">
+  <a href="#"></a>
+  <a href="Start.html">Play Game</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How they came to be in this situation</h2>
+      <h5>It was a cold night in December and they are trying to travel home for christmas, Earlier on in there travels they realised that all of the planes were fully booked so they are going to have to get a set of trains and buses through the country side to get home before christmas day. On one of there final days travelling they get of a bus and decide to find some respite at a local hotel. This shall be where the journey begins. Enter there name so they can play through the story. </h5>
+		<form method="GET">
+			<input type="text" id="textBox" required placeholder="Enter Name">
+			<button id="buttonsubmit" onclick="save_name()"> Submit</button>
+		</form>
+
+		  </div>
+<img src="Town2.jpg">
+		      
+  </div>
+
+
+
+
+
+</body><script>
+document.onload=setName();
+</script>
 </html>
